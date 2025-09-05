@@ -215,24 +215,6 @@ endpoints:
   #   # (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
   #   capabilities: ["execute_code", "file_search", "actions", "tools"]
   custom:
-    # Groq Example
-    - name: 'groq'
-      apiKey: '${GROQ_API_KEY}'
-      baseURL: 'https://api.groq.com/openai/v1/'
-      models:
-        default:
-          [
-            'llama3-70b-8192',
-            'llama3-8b-8192',
-            'llama2-70b-4096',
-            'mixtral-8x7b-32768',
-            'gemma-7b-it',
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: 'mixtral-8x7b-32768'
-      modelDisplayLabel: 'groq'
-
     # Mistral AI Example
     - name: 'Mistral' # Unique name for the endpoint
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
@@ -295,23 +277,14 @@ endpoints:
       dropParams: ['stop']
       modelDisplayLabel: 'OpenRouter'
 
-    # Portkey AI Example
-    - name: 'Portkey'
-      apiKey: 'dummy'
-      baseURL: 'https://api.portkey.ai/v1'
-      headers:
-        x-portkey-api-key: '${PORTKEY_API_KEY}'
-        x-portkey-virtual-key: '${PORTKEY_OPENAI_VIRTUAL_KEY}'
+    # DigitalOcean Gradient AI
+    - name: 'DigitalOcean'
+      apiKey: '${GRADIENTAI_KEY}'
+      baseURL: 'https://inference.do-ai.run/v1'
       models:
-        default: ['gpt-4o-mini', 'gpt-4o', 'chatgpt-4o-latest']
+        default: ['openai-gpt-5']
         fetch: true
-      titleConvo: true
-      titleModel: 'current_model'
-      summarize: false
-      summaryModel: 'current_model'
-      forcePrompt: false
-      modelDisplayLabel: 'Portkey'
-      iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf
+        
 # fileConfig:
 #   endpoints:
 #     assistants:
