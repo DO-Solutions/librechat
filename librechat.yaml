@@ -224,6 +224,11 @@ endpoints:
         default: ['openai-gpt-5','openai-o1','openai-o3','openai-o3-mini','openai-gpt-4o','openai-gpt-4.1','openai-gpt-4o-mini']
         fetch: false
       modelDisplayLabel: 'OpenAI'
+
+fileConfig:
+  endpoints:
+    OpenAI:
+      disabled: true    # blocks all file uploads (images included) to this endpoint
         
 # fileConfig:
 #   endpoints:
