@@ -290,3 +290,14 @@ fileConfig:
 #     # instructions: "You are a memory management assistant. Store and manage user information accurately."
 #     # model_parameters:
 #     #   temperature: 0.1
+
+modelSpecs:
+  enforce: true
+  prioritize: true
+  list:
+    - name: "chatgpt5"
+      label: "ChatGPT 5"
+      default: true            # 👈 makes it the default model
+      preset:
+        endpoint: "OpenAI"
+        model: "openai-gpt-5"
