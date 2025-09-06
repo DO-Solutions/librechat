@@ -148,4 +148,4 @@ modelSpecs:
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
       preset:
         endpoint: "DigitalOcean Gradient AI"
-        model: "o3"
+        model: "openai-o3"
