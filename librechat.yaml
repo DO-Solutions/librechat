@@ -143,8 +143,8 @@ modelSpecs:
         model: "llama3.3-70b-instruct"
         thinking: false
         disableStreaming: true
-    - name: "o3"
-      label: "o3"
+    - name: "chatgpto3"
+      label: "ChatGPT o3"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
       preset:
         endpoint: "DigitalOcean Gradient AI"
