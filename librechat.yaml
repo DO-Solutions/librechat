@@ -31,7 +31,6 @@ interface:
   # Enable/disable file search as a chatarea selection (default: true)
   # Note: This setting does not disable the Agents File Search Capability.
   # To disable the Agents Capability, see the Agents Endpoint configuration instead.
-  fileSearch: false
   # Privacy policy settings
   privacyPolicy:
     externalUrl: 'https://librechat.ai/privacy-policy'
@@ -96,6 +95,10 @@ interface:
   marketplace:
       use: false
   fileCitations: false
+  runCode: false
+  webSearch: false
+  fileSearch: false
+  artifacts: false
   # Temporary chat retention period in hours (default: 720, min: 1, max: 8760)
   # temporaryChatRetention: 1
 
