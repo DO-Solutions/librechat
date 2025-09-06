@@ -224,15 +224,6 @@ endpoints:
         default: ['openai-gpt-5','openai-o1','openai-o3','openai-o3-mini','openai-gpt-4o','openai-gpt-4.1','openai-gpt-4o-mini']
         fetch: false
       modelDisplayLabel: 'OpenAI'
-
-    # DigitalOcean Gradient AI
-    - name: 'DigitalOceanDrop'
-      apiKey: '${GRADIENTAI_KEY}'
-      baseURL: 'https://inference.do-ai.run/v1'
-      models:
-        default: ['openai-gpt-5']
-        fetch: true
-      dropParams: ['stop', 'user', 'frequency_penalty', 'presence_penalty']
         
 # fileConfig:
 #   endpoints:
