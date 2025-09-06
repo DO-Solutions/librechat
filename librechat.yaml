@@ -224,15 +224,16 @@ endpoints:
   custom:
 
     # DigitalOcean Gradient AI
-    - name: 'OpenAI'
+    - name: 'DigitalOcean Gradient AI'
       apiKey: '${GRADIENTAI_KEY}'
       baseURL: 'https://inference.do-ai.run/v1'
       models:
-        default: ['openai-gpt-5','openai-o1','openai-o3','openai-o3-mini','openai-gpt-4o','openai-gpt-4.1','openai-gpt-4o-mini']
-        fetch: false
-      modelDisplayLabel: 'OpenAI'
+        default: ['openai-gpt-5']
+        fetch: true
+      modelDisplayLabel: 'DigitalOcean Gradient AI'
       capabilities: []
-      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+
 
 fileConfig:
   endpoints:
@@ -298,6 +299,8 @@ modelSpecs:
     - name: "chatgpt5"
       label: "ChatGPT 5"
       default: true            # 👈 makes it the default model
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      capabilities: []
       preset:
         endpoint: "OpenAI"
         model: "openai-gpt-5"
