@@ -27,7 +27,7 @@ cache: true
 
 # Custom interface configuration
 interface:
-  customWelcome: 'Welcome to LibreChat! Enjoy your experience.'
+  customWelcome: 'Enjoy your AI experience.'
   # Enable/disable file search as a chatarea selection (default: true)
   # Note: This setting does not disable the Agents File Search Capability.
   # To disable the Agents Capability, see the Agents Endpoint configuration instead.
@@ -42,9 +42,9 @@ interface:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
     modalAcceptance: true
-    modalTitle: 'Terms of Service for LibreChat'
+    modalTitle: 'Terms of Service'
     modalContent: |
-      # Terms and Conditions for LibreChat
+      # Terms and Conditions
 
       *Effective Date: February 18, 2024*
 
@@ -84,9 +84,9 @@ interface:
   modelSelect: true
   parameters: false
   sidePanel: true
-  presets: true
+  presets: false
   prompts: true
-  bookmarks: true
+  bookmarks: false
   multiConvo: false
   agents: false
   peoplePicker:
@@ -120,6 +120,10 @@ registration:
 #   refillIntervalValue: 30
 #   refillIntervalUnit: 'days'
 #   refillAmount: 10000
+
+speech:
+  stt: {}
+  tts: {}
 
 # speech:
 #   tts:
