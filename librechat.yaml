@@ -138,8 +138,9 @@ modelSpecs:
         model: "openai-gpt-5"
     - name: "llama33-70b"
       label: "Llama 3.3 70B Instruct"
-      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg'
       preset:
         endpoint: "DigitalOcean Gradient AI"
         model: "llama3.3-70b-instruct"
         thinking: false
+        disableStreaming: true
