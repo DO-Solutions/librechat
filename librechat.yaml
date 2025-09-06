@@ -82,20 +82,20 @@ interface:
 
   endpointsMenu: true
   modelSelect: true
-  parameters: true
+  parameters: false
   sidePanel: true
   presets: true
   prompts: true
   bookmarks: true
-  multiConvo: true
-  agents: true
+  multiConvo: false
+  agents: false
   peoplePicker:
-    users: true
-    groups: true
-    roles: true
+    users: false
+    groups: false
+    roles: false
   marketplace:
       use: false
-  fileCitations: true
+  fileCitations: false
   # Temporary chat retention period in hours (default: 720, min: 1, max: 8760)
   # temporaryChatRetention: 1
 
