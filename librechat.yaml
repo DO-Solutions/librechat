@@ -151,7 +151,7 @@ modelSpecs:
         endpoint: "DigitalOcean Gradient AI"
         model: "llama3.3-70b-instruct"
         thinking: false
-        disableStreaming: false
+        disableStreaming: true
         useResponsesApi: false
     - name: "claude-sonnet-4"
       label: "Claude Sonnet 4"
@@ -159,6 +159,6 @@ modelSpecs:
       preset:
         endpoint: "DigitalOcean Gradient AI"
         model: "anthropic-claude-sonnet-4"
-        thinking: true
+        thinking: false
         disableStreaming: true
         useResponsesApi: false
