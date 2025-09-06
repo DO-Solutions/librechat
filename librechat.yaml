@@ -82,7 +82,7 @@ interface:
   endpointsMenu: true
   modelSelect: true
   parameters: false
-  sidePanel: true
+  sidePanel: false
   presets: false
   prompts: true
   bookmarks: false
