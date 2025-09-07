@@ -330,6 +330,7 @@ modelSpecs:
       preset:
         endpoint: "Mistral (DigitalOcean)"
         model: "mistral-nemo-instruct-2407"
+        disableStreaming: true
     - name: "qwen3-32b"
       label: "Alibaba Qwen 3 32B"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Qwen_logo.svg'
