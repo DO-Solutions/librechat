@@ -106,17 +106,91 @@ actions:
 # Definition of custom endpoints
 endpoints:
   custom:
-
-    # DigitalOcean Gradient AI
-    - name: 'DigitalOcean Gradient AI'
+    # OpenAI Models via DigitalOcean
+    - name: 'OpenAI (DigitalOcean)'
       apiKey: '${GRADIENTAI_KEY}'
       baseURL: 'https://inference.do-ai.run/v1'
       models:
-        default: ['openai-gpt-5']
-        fetch: true
-      capabilities: []
+        default: [
+          'openai-gpt-5',
+          'openai-gpt-4.1',
+          'openai-gpt-4o',
+          'openai-gpt-4o-mini',
+          'openai-gpt-oss-120b',
+          'openai-gpt-oss-20b',
+          'openai-o1',
+          'openai-o3',
+          'openai-o3-mini'
+        ]        
+        fetch: false
+      modelDisplayLabel: 'OpenAI'
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
 
+    # Anthropic Models via DigitalOcean
+    - name: 'Anthropic (DigitalOcean)'
+      apiKey: '${GRADIENTAI_KEY}'
+      baseURL: 'https://inference.do-ai.run/v1'
+      models:
+        default: [
+          'anthropic-claude-3-opus',
+          'anthropic-claude-3.5-haiku',
+          'anthropic-claude-3.5-sonnet',
+          'anthropic-claude-3.7-sonnet',
+          'anthropic-claude-opus-4',
+          'anthropic-claude-sonnet-4'
+        ]        
+        fetch: false
+      modelDisplayLabel: 'Claude'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+
+    # Meta/Llama Models via DigitalOcean
+    - name: 'Meta (DigitalOcean)'
+      apiKey: '${GRADIENTAI_KEY}'
+      baseURL: 'https://inference.do-ai.run/v1'
+      models:
+        default: [
+          'llama3-8b-instruct',
+          'llama3.3-70b-instruct'
+        ]        
+        fetch: false
+      modelDisplayLabel: 'Llama'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+
+    # DeepSeek Models via DigitalOcean
+    - name: 'DeepSeek (DigitalOcean)'
+      apiKey: '${GRADIENTAI_KEY}'
+      baseURL: 'https://inference.do-ai.run/v1'
+      models:
+        default: [
+          'deepseek-r1-distill-llama-70b'
+        ]        
+        fetch: false
+      modelDisplayLabel: 'DeepSeek'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+
+    # Mistral Models via DigitalOcean
+    - name: 'Mistral (DigitalOcean)'
+      apiKey: '${GRADIENTAI_KEY}'
+      baseURL: 'https://inference.do-ai.run/v1'
+      models:
+        default: [
+          'mistral-nemo-instruct-2407'
+        ]        
+        fetch: false
+      modelDisplayLabel: 'Nemo'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+
+    # Other Models via DigitalOcean
+    - name: 'Other (DigitalOcean)'
+      apiKey: '${GRADIENTAI_KEY}'
+      baseURL: 'https://inference.do-ai.run/v1'
+      models:
+        default: [
+          'alibaba-qwen3-32b'
+        ]        
+        fetch: false
+      modelDisplayLabel: 'Qwen'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
 
 fileConfig:
   endpoints:
@@ -133,13 +207,13 @@ modelSpecs:
       default: true            # 👈 makes it the default model
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
       preset:
-        endpoint: "DigitalOcean Gradient AI"
+        endpoint: "OpenAI (DigitalOcean)"
         model: "openai-gpt-5"
     - name: "chatgpto3"
       label: "ChatGPT o3"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
       preset:
-        endpoint: "DigitalOcean Gradient AI"
+        endpoint: "OpenAI (DigitalOcean)"
         model: "openai-o3"
         thinking: true
         thinkingBudget: "2000"
@@ -148,7 +222,7 @@ modelSpecs:
       label: "Llama 3.3 70B Instruct"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Meta_AI_Logo_%28Ring_Only%29.png'
       preset:
-        endpoint: "DigitalOcean Gradient AI"
+        endpoint: "Meta (DigitalOcean)"
         model: "llama3.3-70b-instruct"
         thinking: false
         disableStreaming: true
@@ -157,7 +231,7 @@ modelSpecs:
       label: "Claude Sonnet 4"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "DigitalOcean Gradient AI"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-sonnet-4"
         thinking: false
         disableStreaming: true
