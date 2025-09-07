@@ -127,7 +127,7 @@ endpoints:
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
 
     # Anthropic Models via DigitalOcean
-    - name: 'Anthropic (DigitalOcean)'
+    - name: 'anthropic'
       apiKey: '${GRADIENTAI_KEY}'
       baseURL: 'https://inference.do-ai.run/v1'
       models:
