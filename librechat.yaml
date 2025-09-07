@@ -336,3 +336,4 @@ modelSpecs:
       preset:
         endpoint: "Other (DigitalOcean)"
         model: "alibaba-qwen3-32b"
+        disableStreaming: true
