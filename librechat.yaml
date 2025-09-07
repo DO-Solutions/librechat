@@ -70,11 +70,6 @@ interface:
   bookmarks: false
   multiConvo: false
   agents: false
-  endpoints:
-    openAI: false
-    anthropic: false
-    google: false
-    custom: false
   peoplePicker:
     users: false
     groups: false
@@ -220,8 +215,6 @@ modelSpecs:
       preset:
         endpoint: "OpenAI (DigitalOcean)"
         model: "openai-o3"
-        thinking: false
-        thinkingBudget: "2000"
     - name: "gpt41"
       label: "GPT 4.1"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
