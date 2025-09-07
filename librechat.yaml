@@ -215,9 +215,8 @@ modelSpecs:
       preset:
         endpoint: "OpenAI (DigitalOcean)"
         model: "openai-o3"
-        thinking: true
+        thinking: false
         thinkingBudget: "2000"
-        useResponsesApi: false
     - name: "llama33-70b"
       label: "Llama 3.3 70B Instruct"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Meta_AI_Logo_%28Ring_Only%29.png'
