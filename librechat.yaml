@@ -62,7 +62,7 @@ interface:
       By using the Website, you acknowledge that you have read these Terms of Service and agree to be bound by them.
 
   endpointsMenu: false
-  modelSelect: true
+  modelSelect: false
   parameters: false
   sidePanel: false
   presets: false
@@ -194,9 +194,18 @@ endpoints:
 
 fileConfig:
   endpoints:
-    DigitalOcean Gradient AI:
+    OpenAI (DigitalOcean):
       disabled: true    # blocks all file uploads (images included) to this endpoint
-        
+    Anthropic (DigitalOcean):
+      disabled: true    # blocks all file uploads (images included) to this endpoint
+    Meta (DigitalOcean):
+      disabled: true    # blocks all file uploads (images included) to this endpoint
+    DeepSeek (DigitalOcean):
+      disabled: true    # blocks all file uploads (images included) to this endpoint
+    Mistral (DigitalOcean):
+      disabled: true    # blocks all file uploads (images included) to this endpoint
+    Other (DigitalOcean):
+      disabled: true    # blocks all file uploads (images included) to this endpoint
 
 modelSpecs:
   enforce: true
