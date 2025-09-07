@@ -300,7 +300,7 @@ modelSpecs:
       label: "Claude Sonnet 4"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "Anthropic (DigitalOcean)"
+        endpoint: "anthropic"
         model: "anthropic-claude-sonnet-4"
     - name: "llama3-8b"
       label: "Llama 3 8B Instruct"
