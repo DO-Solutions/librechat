@@ -318,19 +318,20 @@ modelSpecs:
         disableStreaming: true
     - name: "deepseek-r1"
       label: "DeepSeek R1 Distill Llama 70B"
-      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/9/95/DeepSeek-icon.svg'
       preset:
         endpoint: "DeepSeek (DigitalOcean)"
         model: "deepseek-r1-distill-llama-70b"
+        disableStreaming: true
     - name: "mistral-nemo"
       label: "Mistral Nemo Instruct 2407"
-      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Mistral_AI_logo_%282025%E2%80%93%29.svg/1024px-Mistral_AI_logo_%282025%E2%80%93%29.svg.png?20250207103322'
       preset:
         endpoint: "Mistral (DigitalOcean)"
         model: "mistral-nemo-instruct-2407"
     - name: "qwen3-32b"
       label: "Alibaba Qwen 3 32B"
-      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Qwen_logo.svg'
       preset:
         endpoint: "Other (DigitalOcean)"
         model: "alibaba-qwen3-32b"
