@@ -127,7 +127,7 @@ endpoints:
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
 
     # Anthropic Models via DigitalOcean
-    - name: 'anthropic'
+    - name: 'Anthropic (DigitalOcean)'
       apiKey: '${GRADIENTAI_KEY}'
       baseURL: 'https://inference.do-ai.run/v1'
       models:
@@ -196,7 +196,7 @@ fileConfig:
   endpoints:
     OpenAI (DigitalOcean):
       disabled: true    # blocks all file uploads (images included) to this endpoint
-    anthropic:
+    Anthropic (DigitalOcean):
       disabled: true    # blocks all file uploads (images included) to this endpoint
     Meta (DigitalOcean):
       disabled: true    # blocks all file uploads (images included) to this endpoint
@@ -270,37 +270,37 @@ modelSpecs:
       label: "Claude 3 Opus"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "anthropic"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3-opus"
     - name: "claude-35-haiku"
       label: "Claude 3.5 Haiku"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "anthropic"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3.5-haiku"
     - name: "claude-35-sonnet"
       label: "Claude 3.5 Sonnet"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "anthropic"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3.5-sonnet"
     - name: "claude-37-sonnet"
       label: "Claude 3.7 Sonnet"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "anthropic"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3.7-sonnet"
     - name: "claude-opus-4"
       label: "Claude Opus 4"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "anthropic"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-opus-4"
     - name: "claude-sonnet-4"
       label: "Claude Sonnet 4"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
-        endpoint: "anthropic"
+        endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-sonnet-4"
     - name: "llama3-8b"
       label: "Llama 3 8B Instruct"
