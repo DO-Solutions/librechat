@@ -70,6 +70,11 @@ interface:
   bookmarks: false
   multiConvo: false
   agents: false
+  endpoints:
+    openAI: false
+    anthropic: false
+    google: false
+    custom: false
   peoplePicker:
     users: false
     groups: false
@@ -217,6 +222,98 @@ modelSpecs:
         model: "openai-o3"
         thinking: false
         thinkingBudget: "2000"
+    - name: "gpt41"
+      label: "GPT 4.1"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-gpt-4.1"
+    - name: "gpt4o"
+      label: "GPT 4o"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-gpt-4o"
+    - name: "gpt4o-mini"
+      label: "GPT 4o Mini"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-gpt-4o-mini"
+    - name: "gpt-oss-120b"
+      label: "GPT OSS 120B"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-gpt-oss-120b"
+    - name: "gpt-oss-20b"
+      label: "GPT OSS 20B"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-gpt-oss-20b"
+    - name: "o1"
+      label: "o1"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-o1"
+        thinking: true
+        useResponsesApi: true
+    - name: "o3-mini"
+      label: "o3 Mini"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
+      preset:
+        endpoint: "OpenAI (DigitalOcean)"
+        model: "openai-o3-mini"
+        thinking: true
+        useResponsesApi: true
+    - name: "claude-3-opus"
+      label: "Claude 3 Opus"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+      preset:
+        endpoint: "Anthropic (DigitalOcean)"
+        model: "anthropic-claude-3-opus"
+    - name: "claude-35-haiku"
+      label: "Claude 3.5 Haiku"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+      preset:
+        endpoint: "Anthropic (DigitalOcean)"
+        model: "anthropic-claude-3.5-haiku"
+    - name: "claude-35-sonnet"
+      label: "Claude 3.5 Sonnet"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+      preset:
+        endpoint: "Anthropic (DigitalOcean)"
+        model: "anthropic-claude-3.5-sonnet"
+    - name: "claude-37-sonnet"
+      label: "Claude 3.7 Sonnet"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+      preset:
+        endpoint: "Anthropic (DigitalOcean)"
+        model: "anthropic-claude-3.7-sonnet"
+        thinking: true
+    - name: "claude-opus-4"
+      label: "Claude Opus 4"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+      preset:
+        endpoint: "Anthropic (DigitalOcean)"
+        model: "anthropic-claude-opus-4"
+        thinking: true
+    - name: "claude-sonnet-4"
+      label: "Claude Sonnet 4"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+      preset:
+        endpoint: "Anthropic (DigitalOcean)"
+        model: "anthropic-claude-sonnet-4"
+        thinking: true
+    - name: "llama3-8b"
+      label: "Llama 3 8B Instruct"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Meta_AI_Logo_%28Ring_Only%29.png'
+      preset:
+        endpoint: "Meta (DigitalOcean)"
+        model: "llama3-8b-instruct"
+        thinking: false
     - name: "llama33-70b"
       label: "Llama 3.3 70B Instruct"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Meta_AI_Logo_%28Ring_Only%29.png'
@@ -226,12 +323,24 @@ modelSpecs:
         thinking: false
         disableStreaming: true
         useResponsesApi: false
-    - name: "claude-sonnet-4"
-      label: "Claude Sonnet 4"
-      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
+    - name: "deepseek-r1"
+      label: "DeepSeek R1 Distill Llama 70B"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
       preset:
-        endpoint: "Anthropic (DigitalOcean)"
-        model: "anthropic-claude-sonnet-4"
+        endpoint: "DeepSeek (DigitalOcean)"
+        model: "deepseek-r1-distill-llama-70b"
+        thinking: true
+    - name: "mistral-nemo"
+      label: "Mistral Nemo Instruct 2407"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+      preset:
+        endpoint: "Mistral (DigitalOcean)"
+        model: "mistral-nemo-instruct-2407"
         thinking: false
-        disableStreaming: true
-        useResponsesApi: false
+    - name: "qwen3-32b"
+      label: "Alibaba Qwen 3 32B"
+      iconURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/DigitalOcean_icon.svg'
+      preset:
+        endpoint: "Other (DigitalOcean)"
+        model: "alibaba-qwen3-32b"
+        thinking: false
