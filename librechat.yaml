@@ -204,18 +204,18 @@ fileConfig:
         
 
 modelSpecs:
-  enforce: false
+  enforce: true
   prioritize: true
   list:
     - name: "chatgpt5"
-      label: "ChatGPT 5"
+      label: "GPT 5"
       default: true            # 👈 makes it the default model
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
       preset:
         endpoint: "OpenAI (DigitalOcean)"
         model: "openai-gpt-5"
     - name: "chatgpto3"
-      label: "ChatGPT o3"
+      label: "o3"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg'
       preset:
         endpoint: "OpenAI (DigitalOcean)"
