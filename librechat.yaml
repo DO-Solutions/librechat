@@ -314,21 +314,18 @@ modelSpecs:
       preset:
         endpoint: "Meta (DigitalOcean)"
         model: "llama3-8b-instruct"
-        disableStreaming: true
     - name: "llama33-70b"
       label: "Llama 3.3 70B Instruct"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Meta_AI_Logo_%28Ring_Only%29.png'
       preset:
         endpoint: "Meta (DigitalOcean)"
         model: "llama3.3-70b-instruct"
-#        disableStreaming: true
     - name: "deepseek-r1"
       label: "DeepSeek R1 Distill Llama 70B"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/9/95/DeepSeek-icon.svg'
       preset:
         endpoint: "DeepSeek (DigitalOcean)"
         model: "deepseek-r1-distill-llama-70b"
-        disableStreaming: true
         thinking: true
     - name: "mistral-nemo"
       label: "Mistral Nemo Instruct 2407"
@@ -336,11 +333,9 @@ modelSpecs:
       preset:
         endpoint: "Mistral (DigitalOcean)"
         model: "mistral-nemo-instruct-2407"
-        disableStreaming: true
     - name: "qwen3-32b"
       label: "Alibaba Qwen 3 32B"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Qwen_logo.svg'
       preset:
         endpoint: "Other (DigitalOcean)"
         model: "alibaba-qwen3-32b"
-        disableStreaming: true
