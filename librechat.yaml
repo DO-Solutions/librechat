@@ -78,7 +78,7 @@ interface:
       use: false
   fileCitations: false
   runCode: false
-  webSearch: false
+  webSearch: true
   fileSearch: false
   artifacts: false
   # Temporary chat retention period in hours (default: 720, min: 1, max: 8760)
