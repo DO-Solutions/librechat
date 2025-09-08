@@ -321,7 +321,7 @@ modelSpecs:
       preset:
         endpoint: "Meta (DigitalOcean)"
         model: "llama3.3-70b-instruct"
-        disableStreaming: true
+#        disableStreaming: true
     - name: "deepseek-r1"
       label: "DeepSeek R1 Distill Llama 70B"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/9/95/DeepSeek-icon.svg'
