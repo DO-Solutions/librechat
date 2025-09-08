@@ -7,13 +7,6 @@ version: 1.2.1
 # Cache settings: Set to true to enable caching
 cache: true
 
-# Title generation configuration
-titleConvo:
-  model: "openai-gpt-4o-mini"
-  endpoint: "OpenAI (DigitalOcean)"
-  titleMethod: "completion"
-  modelDisplayLabel: "GPT 4o Mini"
-
 # Custom interface configuration
 interface:
   customWelcome: 'Enjoy your AI experience.'
