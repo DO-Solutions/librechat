@@ -272,30 +272,35 @@ modelSpecs:
       preset:
         endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3-opus"
+        max_tokens: 4096
     - name: "claude-35-haiku"
       label: "Claude 3.5 Haiku"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
         endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3.5-haiku"
+        max_tokens: 4096
     - name: "claude-35-sonnet"
       label: "Claude 3.5 Sonnet"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
         endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3.5-sonnet"
+        max_tokens: 4096
     - name: "claude-37-sonnet"
       label: "Claude 3.7 Sonnet"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
         endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-3.7-sonnet"
+        max_tokens: 4096
     - name: "claude-opus-4"
       label: "Claude Opus 4"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
       preset:
         endpoint: "Anthropic (DigitalOcean)"
         model: "anthropic-claude-opus-4"
+        max_tokens: 4096
     - name: "claude-sonnet-4"
       label: "Claude Sonnet 4"
       iconURL: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg'
