@@ -22,7 +22,7 @@ interface:
   termsOfService:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
-    modalAcceptance: true
+    modalAcceptance: false
     modalTitle: 'Terms of Service'
     modalContent: |
       # Terms and Conditions
